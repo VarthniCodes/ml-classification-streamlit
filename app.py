@@ -7,11 +7,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 st.title("Machine Learning Classification Models App")
-st.subheader("Download Sample Test Dataset")
-sample_csv_url = "https://raw.githubusercontent.com/VarthniCodes/ml-classification-streamlit/refs/heads/main/test_data.csv"
-
-st.markdown(
-    f"[Click here to download sample test dataset]({sample_csv_url})")
 
 st.write("Upload test dataset and evaluate different ML models.")
 
@@ -78,4 +73,10 @@ if uploaded_file:
     else:
         st.error("Target column not found in dataset.")
 
+st.divider()
+st.info("Don't have a dataset?")
+st.subheader("Download Sample Test Dataset below")
+sample_csv_url = "https://raw.githubusercontent.com/VarthniCodes/ml-classification-streamlit/refs/heads/main/test_data.csv"
 
+st.markdown(
+    f"[Click here to download sample test dataset]({sample_csv_url})")
