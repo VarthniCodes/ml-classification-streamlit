@@ -25,7 +25,7 @@ models = {
 scaler = joblib.load(os.path.join(MODEL_PATH, "scaler.pkl"))
 
 # Upload dataset
-uploaded_file = st.file_uploader("Upload CSV Test Data", type=["csv"])
+uploaded_file = st.file_uploader("Upload your CSV Test Data", type=["csv"])
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
@@ -72,3 +72,4 @@ if uploaded_file:
 
     else:
         st.error("Target column not found in dataset.")
+
