@@ -52,4 +52,4 @@ Live App Link: https://ml-classification-app-gfgvoaykschfbz3xbtrvxd.streamlit.ap
 ---
 
 ## GitHub Repository
-Repository Link:
+Repository Link: https://github.com/VarthniCodes/ml-classification-streamlit
