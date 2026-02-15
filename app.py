@@ -74,9 +74,10 @@ if uploaded_file:
         st.error("Target column not found in dataset.")
 
 st.divider()
-st.info("Don't have a dataset?")
+st.info("Don't have a dataset? Need Sample Data")
 st.subheader("Download Sample Test Dataset below")
 sample_csv_url = "https://raw.githubusercontent.com/VarthniCodes/ml-classification-streamlit/refs/heads/main/test_data.csv"
 
 st.markdown(
     f"[Click here to download sample test dataset]({sample_csv_url})")
+
